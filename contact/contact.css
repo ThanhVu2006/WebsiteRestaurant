@@ -1,0 +1,398 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #F4F1DE;
+    color: #3D405B;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.8rem 5%;
+    font-family: 'Lobster', cursive;
+    background: rgba(244, 241, 222, 0.9);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(233, 119, 53, 1.5);
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #3D405B;
+    transition: color 1.3s;
+}
+
+.navigation a:hover {
+    color: red;
+}
+
+.order {
+    background: rgba(233, 119, 53, 1.5);
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    border: none;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.order a {
+    text-decoration: none;
+    color: white;
+}
+
+.order:hover {
+    transform: translateY(-2px);
+}
+
+/* Thêm nút list và checkbox */
+#nav-toggle {
+    display: none;
+}
+
+.list {
+    display: none;
+    font-size: 1.8rem;
+    color: #3D405B;
+    cursor: pointer;
+}
+
+
+.order:hover{
+    transform: translateY(-2px);
+}
+
+.main-contact{
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 7%;
+}
+
+.main-image img{
+    width: 100%;
+    height: 600px;
+}
+.main-text{
+    text-align: left;
+    font-family: "OakesGroteskBold";
+    font-size: 18px;
+    padding: 10% 0 10% 0;
+}
+.main-text h3{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    color: #1a1a1a;
+}
+.main-text p{
+    color: #1a1a11;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.main-text hr{
+    border: none;
+    border-top: 2px solid #dcdcdc;
+    width: 650px;
+    margin: 32px auto;
+}
+
+.main-text-z{
+    font-family: "OakesGroteskBold";
+    font-size: 18px;
+}
+
+.main-text-z h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #1a1a1a;
+}
+
+.main-text-z p{
+    color: #1a1a11;
+    line-height: 25px;
+    letter-spacing: 2px;
+    padding: 0 10%;
+    text-align: center;
+}
+.contact-links {
+    text-align: center;
+}
+.contact-links a{
+    color: black;
+}
+
+
+.main-contact-us{
+    font-size: 14px;
+    color: #1a1a11;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    padding: 3% 0 0 25%;
+    margin: 10px;
+}
+ input[type="text"] {
+    width: 750px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;      
+    box-sizing: border-box;
+ }
+ label span {
+    color: #999;        
+    font-style: italic; 
+    font-size: 0.9em;   
+    opacity: 1.0;       
+  }
+  
+
+ input[type="email"] {
+    width: 750px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;      
+    box-sizing: border-box;
+ }
+
+ input[type="number"] {
+    width: 750px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;      
+    box-sizing: border-box;
+ }
+
+ #question-select{
+    width: 750px;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 16px;        
+    font-style: italic;   
+    opacity: 1.0;       
+    box-sizing: border-box;
+ }
+.main-message textarea{
+    width: 750px;
+    height: 200px;
+    padding: 8px 12px;
+    font-size: 16px;        
+    font-style: italic;   
+    opacity: 1.0;       
+    box-sizing: border-box;
+}
+
+.main-button-send [type="submit"]{
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Butler Bold";
+    color: #701515;
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: #701515;
+    margin-top: 2%;
+}
+
+.main-button-send [type="submit"]:hover{
+    color: red;
+    transform: translateY(-2px);
+}
+
+.recaptcha-footer{
+    margin: 30px 0 0 60px;
+}
+
+.recaptcha-footer a{
+    color: black;
+}
+.recaptcha-footer a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        display: block;
+    }
+    
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(244, 241, 222, 0.9);
+        padding: 1rem 5%;
+        box-sizing: border-box;
+    }
+
+    #nav-toggle:checked ~ header .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-contact {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 9rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-image {
+        order: -1;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-text h3 {
+        font-size: 28px;
+    }
+
+    .main-text p {
+        text-align: center;
+    }
+
+    .main-text hr {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-contact-z {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-text-z p {
+        padding: 0 5%;
+    }
+
+    .main-text-z h3{
+        font-size: 24px;
+    }
+
+    .contact-links {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main-contact-us {
+        padding: 3% 5%;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    #question-select,
+    .main-message textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .recaptcha-footer {
+        margin: 30px 0;
+        text-align: center;
+    }
+    
+}
+
+/* Tablet: 768px đến 1366px */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    header {
+        padding: 1.5rem 4%;
+    }
+    .logo {
+        font-size: 1.6rem;
+    }
+    .navigation {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .list {
+        display: none;
+    }
+    .order {
+        padding: 0.7rem 1.8rem;
+    }
+    .main-contact {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding-top: 8rem;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .main-image img {
+        height: 400px; 
+    }
+    .main-text {
+        padding: 8% 2%;
+    }
+    .main-text h3 {
+        font-size: 36px; 
+    }
+    .main-text p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .main-text hr {
+        width: 100%;
+        max-width: 500px;
+    }
+    .main-text-z h3 {
+        font-size: 36px; 
+    }
+    .main-text-z p {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        padding: 0 10%;
+    }
+    .main-contact-us {
+        padding: 3% 0; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    #question-select,
+    .main-message textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .recaptcha-footer {
+        margin: 30px 0;
+        text-align: center;
+    }
+}

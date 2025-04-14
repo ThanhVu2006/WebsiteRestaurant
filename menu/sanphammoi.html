@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Sản Phẩm</title>
+  <link rel="stylesheet" href="sanphammoi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <input type="checkbox" id="nav-toggle">
+  <header>
+      <div class="logo">Hotpot Restaurant</div>
+      <nav class="navigation">
+          <a href="/home/home.html">Trang chủ</a>
+          <a href="/introduce/introduces.html">Giới thiệu</a>
+          <a href="/service/service web/service.html">Dịch vụ</a>
+          <a href="/menu/sanphammoi.html">Sản phẩm</a>
+          <a href="/new/news/news.html">Tin tức</a>
+          <a href="/contact/contact.html">Liên hệ</a>
+      </nav>
+      <button class="order"><a href="/menu/sanphammoi.html">Order Food</a></button>
+      <label for="nav-toggle" class="list">☰</label>
+  </header>
+
+  <div class="toanboweb">
+    <div class="danhsach">
+      <select id="category-filter">
+        <option value="all">MENU</option>
+        <option value="category1">Món chính</option>
+        <option value="category2">Lẩu</option>
+        <option value="category4">Khai vị</option>
+        <option value="category3">Nước</option>
+      </select>
+      <select id="price-filter">
+        <option value="all">Chọn mức giá</option>
+        <option value="low">Dưới 50k</option>
+        <option value="medium">50k - 100k</option>
+        <option value="high">Trên 100k</option>
+      </select>
+    </div>
+    <main>
+      <section>
+        <div class="sanphamluoi">
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category2" data-price="69000" id="laumam">
+              <div class="front">
+                <img src="lau/110724-lau-mam-mien-tay-cung-buffet-poseidon-1-1.jpg" alt="launam">
+                <h3>Lẩu mắm</h3>
+                <div class="price">158.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Nước lẩu đậm đà, thơm lừng mắm đặc trưng, kết hợp nguyên liệu tươi
+                  ngon.</p>
+                <p><strong>Điểm nổi bật:</strong> Hương vị đậm đà, nước lẩu thơm ngon.</p>
+                <p><strong>Phù hợp:</strong> Bữa ăn gia đình, nhóm bạn.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm bún, rau xanh và hải sản tươi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category2" data-price="188000">
+              <div class="front">
+                <img src="lau/lauthaihaisan.jpg" alt="lauthaihaisan">
+                <h3>Lẩu thái hải sản</h3>
+                <div class="price">168.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Nước lẩu chua cay nồng nàn, hải sản tươi ngon, đậm đà.</p>
+                <p><strong>Điểm nổi bật:</strong> Chua cay đậm đà, hải sản tươi ngon.</p>
+                <p><strong>Phù hợp:</strong> Bữa tiệc đông người.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm mì hoặc bún tươi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category2" data-price="155000">
+              <div class="front">
+                <img src="lau/laucaduoimangchua.jpg" alt="laucaduoi">
+                <h3>Lẩu cá đuối</h3>
+                <div class="price">155.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Nước lẩu chua cay, cá đuối mềm ngọt, đậm đà hương vị.</p>
+                <p><strong>Điểm nổi bật:</strong> Nước lẩu chua cay, cá đuối mềm ngọt.</p>
+                <p><strong>Phù hợp:</strong> Bữa ăn nhóm hoặc gia đình.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm bún và rau muống.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category2" data-price="134000">
+              <div class="front">
+                <img src="lau/laugalae.jpg" alt="laugalae">
+                <h3>Lẩu gà lá é</h3>
+                <div class="price">134.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Nước lẩu thơm lừng lá é, thịt gà ta dai ngon, đậm đà.</p>
+                <p><strong>Điểm nổi bật:</strong> Hương lá é đặc trưng, nước lẩu thơm.</p>
+                <p><strong>Phù hợp:</strong> Bữa tối ấm cúng.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm nấm và mì tươi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category2" data-price="163000">
+              <div class="front">
+                <img src="lau/laugaothiem.jpg" alt="laugaothiem">
+                <h3>Lẩu gà ớt hiểm</h3>
+                <div class="price">163.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Nước lẩu cay nồng ớt hiểm, thịt gà dai ngon, đậm đà.</p>
+                <p><strong>Điểm nổi bật:</strong> Cay nồng, thịt gà dai ngon.</p>
+                <p><strong>Phù hợp:</strong> Người thích món cay.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm rau cải và bún.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="120000" id="lau-bo-nhung-giam">
+              <div class="front">
+                <img src="/menu/lau/laubonhunggiam.jpeg" alt="laubonhunggiam">
+                <h3>Lẩu bò nhúng giấm</h3>
+                <div class="price">175.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thưởng thức:</strong> Thịt bò mềm, nước lẩu chua nhẹ từ giấm, thơm mùi sả và hành tây.</p>
+                <p><strong>Điểm nổi bật:</strong> Hương vị đậm đà, thanh chua vừa phải, ăn kèm rau sống và bún.</p>
+                <p><strong>Phù hợp:</strong> Bữa ăn quây quần bên gia đình hoặc bạn bè.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm bánh tráng, rau sống và nước mắm chấm đặc biệt.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="20000">
+              <div class="front">
+                <img src="khaivi/Cach-lam-banh-xep-chien-bang-noi-chien-khong-dau-5.jpg" alt="bet">
+                <h3>Bánh xếp</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Bánh xếp nhân tôm thịt đậm đà, vỏ bánh giòn tan, hấp dẫn.</p>
+                <p><strong>Điểm nổi bật:</strong> Vỏ bánh giòn, nhân tôm thịt đậm đà.</p>
+                <p><strong>Phù hợp:</strong> Khai vị hoặc ăn nhẹ.</p>
+                <p><strong>Gợi ý:</strong> Chấm với nước mắm chua ngọt.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="25000" id="cha-gio-hai-san">
+              <div class="front">
+                <img src="khaivi/sddefault.jpg" alt="chagiohaisan">
+                <h3>Chả giò hải sản</h3>
+                <div class="price">37.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Chả giò nhân hải sản thơm ngon, vỏ giòn tan, đậm đà.</p>
+                <p><strong>Điểm nổi bật:</strong> Vỏ chả giò giòn, nhân hải sản tươi ngọt.</p>
+                <p><strong>Phù hợp:</strong> Khai vị hoặc ăn vặt.</p>
+                <p><strong>Gợi ý:</strong> Chấm nước mắm chua ngọt và ăn kèm rau sống.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="20000" id="cha-gio">
+              <div class="front">
+                <img src="khaivi/cha-gio-viet-nam-1.jpg" alt="chagiothitbam">
+                <h3>Chả giò thịt bằm</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Chả giò nhân thịt bằm đậm đà, vỏ giòn rụm, hấp dẫn.</p>
+                <p><strong>Điểm nổi bật:</strong> Vỏ giòn, nhân thịt bằm thơm ngon.</p>
+                <p><strong>Phù hợp:</strong> Khai vị hoặc tiệc nhỏ.</p>
+                <p><strong>Gợi ý:</strong> Chấm nước mắm chua ngọt và ăn kèm rau sống.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="79000" id="goi-hai-san">
+              <div class="front">
+                <img src="khaivi/goi-hai-san.webp" alt="goihaisan">
+                <h3>Gỏi hải sản</h3>
+                <div class="price">97.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Hải sản tươi ngon, trộn gỏi chua cay, kích thích vị giác.</p>
+                <p><strong>Điểm nổi bật:</strong> Hải sản tươi, sốt chua ngọt hấp dẫn.</p>
+                <p><strong>Phù hợp:</strong> Khai vị hoặc bữa ăn nhẹ.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm bánh phồng tôm.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="30000">
+              <div class="front">
+                <img src="khaivi/khoai-tay-chien-.jpg" alt="khoaitaychien">
+                <h3>Khoai tây chiên</h3>
+                <div class="price">30.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Khoai tây chiên giòn rụm, vàng ươm, hấp dẫn mọi lứa tuổi.</p>
+                <p><strong>Điểm nổi bật:</strong> Giòn rụm, vàng ươm.</p>
+                <p><strong>Phù hợp:</strong> Ăn vặt hoặc kèm món chính.</p>
+                <p><strong>Gợi ý:</strong> Chấm tương cà hoặc mayonnaise.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="40000">
+              <div class="front">
+                <img src="khaivi/salad-ca-ngu.jpg" alt="saladcangu">
+                <h3>Salad cá ngừ</h3>
+                <div class="price">40.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Cá ngừ tươi ngon, rau xanh giòn, sốt mè rang thơm lừng.</p>
+                <p><strong>Điểm nổi bật:</strong> Cá ngừ tươi, rau xanh giòn.</p>
+                <p><strong>Phù hợp:</strong> Người ăn kiêng hoặc bữa nhẹ.</p>
+                <p><strong>Gợi ý:</strong> Dùng với sốt mè rang.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="85000">
+              <div class="front">
+                <img src="monchinh/bo-sot-tieu-den.jpg" alt="bosottieuden">
+                <h3>Bò sốt tiêu đen</h3>
+                <div class="price">85.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Thịt bò mềm thơm, sốt tiêu đen cay nồng, kích thích vị giác.</p>
+                <p><strong>Điểm nổi bật:</strong> Thịt bò mềm, sốt tiêu đen thơm nồng.</p>
+                <p><strong>Phù hợp:</strong> Bữa trưa hoặc tối, người thích món đậm đà.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm bánh mì hoặc cơm trắng.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="590000">
+              <div class="front">
+                <img src="monchinh/2023_12_15_638382464316943415_ca-thu-kho-tieu-thumb.jpg" alt="cathusottieuxanh">
+                <h3>Cá thu sốt tiêu xanh</h3>
+                <div class="price">200.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Cá thu tươi ngon, sốt tiêu xanh thơm lừng, đậm đà hương vị.</p>
+                <p><strong>Điểm nổi bật:</strong> Cá thu tươi, sốt tiêu xanh thơm lừng.</p>
+                <p><strong>Phù hợp:</strong> Bữa tối sang trọng.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm rau củ hấp.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="168000" id="ga-nuong-muoi-ot">
+              <div class="front">
+                <img src="monchinh/ga-nuong-muoi-ot.png" alt="ganuongmuoiot">
+                <h3>Gà nướng muối ớt</h3>
+                <div class="price">129.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Gà nướng thơm lừng, cay nồng muối ớt, đậm đà khó cưỡng.</p>
+                <p><strong>Điểm nổi bật:</strong> Gà thơm, cay nồng muối ớt.</p>
+                <p><strong>Phù hợp:</strong> Bữa tiệc hoặc cuối tuần.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm rau răm và muối ớt chanh.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="130000">
+              <div class="front">
+                <img src="monchinh/suonnuongmatong.jpg" alt="suonnuongmatong">
+                <h3>Sườn nướng mật ong</h3>
+                <div class="price">130.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Sườn heo nướng vàng ươm, thấm vị mật ong ngọt dịu, thơm lừng.</p>
+                <p><strong>Điểm nổi bật:</strong> Sườn mềm, ngọt thơm mật ong.</p>
+                <p><strong>Phù hợp:</strong> Bữa tối hoặc tiệc BBQ.</p>
+                <p><strong>Gợi ý:</strong> Ăn kèm khoai lang nướng.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category4" data-price="35000">
+              <div class="front">
+                <img src="monchinh/sup-cua.jpg" alt="supcua">
+                <h3>Súp cua</h3>
+                <div class="price">35.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Súp cua thơm lừng, trứng cút béo ngậy, bổ dưỡng.</p>
+                <p><strong>Điểm nổi bật:</strong> Súp đặc, cua tươi ngọt.</p>
+                <p><strong>Phù hợp:</strong> Khai vị hoặc bữa nhẹ.</p>
+                <p><strong>Gợi ý:</strong> Rắc thêm tiêu và hành lá.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category1" data-price="110000" id="tom-hap-dua">
+              <div class="front">
+                <img src="monchinh/tom-hap-dua.jpg" alt="tomhapdua">
+                <h3>Tôm hấp dừa</h3>
+                <div class="price">107.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết món ăn</h3>
+                <p><strong>Thương thức:</strong> Tôm sú tươi sống, hấp cùng nước dừa thơm ngọt, giữ trọn vị tự nhiên.
+                </p>
+                <p><strong>Điểm nổi bật:</strong> Tôm tươi, ngọt nước dừa.</p>
+                <p><strong>Phù hợp:</strong> Bữa tối hoặc tiệc nhỏ.</p>
+                <p><strong>Gợi ý:</strong> Uống kèm nước dừa tươi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="20000">
+              <div class="front">
+                <img src="nuoc/tra_xanh.png" alt="traxanh">
+                <h3>Trà xanh</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> Trà xanh tự nhiên, thanh mát, giúp thư giãn sau bữa ăn.</p>
+                <p><strong>Điểm nổi bật:</strong> Thơm mát, vị trà tự nhiên.</p>
+                <p><strong>Phù hợp:</strong> Mọi thời điểm trong ngày.</p>
+                <p><strong>Gợi ý:</strong> Uống lạnh với đá.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="20000">
+              <div class="front">
+                <img src="nuoc/sting_red.webp" alt="sting">
+                <h3>Sting</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> Sting sảng khoái, vị dâu đặc trưng, tiếp thêm năng lượng.</p>
+                <p><strong>Điểm nổi bật:</strong> Sảng khoái, vị dâu đặc trưng.</p>
+                <p><strong>Phù hợp:</strong> Giải khát sau bữa ăn.</p>
+                <p><strong>Gợi ý:</strong> Uống lạnh để tăng hương vị.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="20000">
+              <div class="front">
+                <img src="nuoc/coca_cola.webp" alt="cocacola">
+                <h3>Coca-cola</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> Coca Cola mát lạnh, sảng khoái, giải nhiệt tức thì.</p>
+                <p><strong>Điểm nổi bật:</strong> Sủi bọt, vị ngọt đậm đà.</p>
+                <p><strong>Phù hợp:</strong> Kèm món ăn nhanh.</p>
+                <p><strong>Gợi ý:</strong> Thêm vài lát chanh tươi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="20000">
+              <div class="front">
+                <img src="nuoc/c2.jpg" alt="c2">
+                <h3>C2</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> C2 thanh mát, vị trà nhẹ nhàng, giải khát tự nhiên.</p>
+                <p><strong>Điểm nổi bật:</strong> Vị trà nhẹ, thanh mát.</p>
+                <p><strong>Phù hợp:</strong> Giải khát hàng ngày.</p>
+                <p><strong>Gợi ý:</strong> Uống lạnh với ít đá.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="20000">
+              <div class="front">
+                <img src="nuoc/beer.webp" alt="beer">
+                <h3>Bia</h3>
+                <div class="price">20.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> Bia mát lạnh, vị đắng nhẹ, thư giãn sau ngày dài.</p>
+                <p><strong>Điểm nổi bật:</strong> Mát lạnh, vị đắng nhẹ.</p>
+                <p><strong>Phù hợp:</strong> Tiệc tối hoặc thư giãn.</p>
+                <p><strong>Gợi ý:</strong> Uống kèm món nướng.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sanpham-container">
+            <div class="sanpham" data-category="category3" data-price="5000">
+              <div class="front">
+                <img src="nuoc/aquavina.png" alt="aquavina">
+                <h3>Nước lọc</h3>
+                <div class="price">5.000 VND</div>
+              </div>
+              <div class="back">
+                <h3>Chi tiết thức uống</h3>
+                <p><strong>Thương thức:</strong> Nước lọc tinh khiết, đảm bảo sức khỏe, giải khát mọi lúc.</p>
+                <p><strong>Điểm nổi bật:</strong> Tinh khiết, không calo, tốt cho cơ thể.</p>
+                <p><strong>Phù hợp:</strong> Mọi lứa tuổi, dùng trong mọi bữa ăn.</p>
+                <p><strong>Gợi ý:</strong> Thêm vài lát chanh để tăng hương vị.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+  <br>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Hotpot Restaurant</h3>
+        <p>
+          Chúng tôi là nơi bạn có thể tìm thấy hương vị lẩu đậm đà, nguyên liệu tươi mới mỗi ngày và một không gian ấm
+          cúng cho những buổi sum họp gia đình, bạn bè. Hãy đến và cảm nhận sự khác biệt từ từng nồi lẩu!
+        </p>
+      </div>
+      <div class="footer-section hours">
+        <h3>Thời gian mở cửa</h3>
+        <p>Thứ 4 tới Chủ nhật</p>
+        <p>Buổi tối từ 6.30pm tới 11.30pm</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Liên hệ</h3>
+        <p>315/55 Quang Trung, Gò Vấp, Tp HCM</p>
+        <p>(+94 72 323 714)</p>
+        <p>hotpotrestaurantz@gmail.com</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <head>
+    <!-- ... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <script src="sanphammoi.js"></script>
+</body>
+
+</html>
